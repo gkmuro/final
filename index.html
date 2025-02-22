@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Grace Muro</title>
+		<meta charset="utf-8">
+		<meta name="description" content="GIT 413 Final">
+		<link href="styles.css" rel="stylesheet">
+		<meta name="author" content="Grace Muro">
+        <link rel="icon" href="images/gmlogo.png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="scripts.js" defer=""></script>
+
+
+	</head>
+
+    <body id="top">
+        <div id ="wrapper">
+            <!-- HEADER -->
+            <header>
+                <h1><a href="index.html" id="myHeader">Grace Muro</a></h1>
+            </header>
+
+            <!-- NAVIGATION -->
+            
+            <nav class="navbar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact </a></li>
+                </ul>
+            </nav>
+ 
+            <main>
+
+                <!-- img carousel from jquery library -->
+                <div class="Container">
+                    <ul class="Carousel">
+                        <li class="Items Front"><img src="images/calgarycropped.jpg" alt ="grace in calgary canada"></li>
+                        <li class="Items Right"><img src="images/alaska.png" alt ="grace in juneau alaska"></li>
+                        <li class="Items Left"><img src="images/italy.png" alt ="grace at lake como italy"></li>
+                    </ul>
+                </div>
+
+                <section id="home">
+                    <h2>home</h2>
+                    <div>
+                        <p id="intro">Grace Muro is a 24 year old Front End Web Developer from San Diego, CA. She also specializes in Graphic Design and UX Design.</p>
+                        <nav>
+                            <ul class="links">
+                                <li><a href="https://www.behance.net/gracemuro"><img src="images/behance-1.svg" alt="behance logo"></a></li>
+                                <li><a href="https://www.instagram.com/peoplelikegrace/"><img src="images/Instagram_logo_2016.svg.png" alt="insta logo"></a></li>
+                                <li><a href="https://www.linkedin.com/in/grace-muro-a34041235/"><img src="images/LinkedIn_icon.svg.png" alt="linkenin logo"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+
+                <!-- ABOUT -->
+                <section id = "about">
+                    <h2>about</h2>
+                    <img src="images/newyork.JPG" alt ="grace in central park nyc" class="image-left">
+                    <p>Hi there! My name is <span>Grace Muro</span>, I was born and raised in Southern California. My passions include distance running, traveling and reading. I am currently working on developing my graphic skills while working full time at Starbucks as a Shift Supervisor. </p>
+
+                    <p>I have experience <span>interning at UC San Diego as a Computer Science Education Developer</span> in the summer of 2017. In the duration of this internship I worked with a team of individuals developing cirriculum for <span>AP Computer Science Principles</span>.</p>
+
+                    <p>In addition to this I spent <span>five years</span> working at Pizza Hut as a <span>Shift leader</span> and have spent <span>four years</span> currrently working at<span> Starbucks</span> as a Shift Supervisor. My specific store is a brand new store that opened a year ago. Since opening we have become the store with the fastest times out of 64 store in San Diego County.</p>
+
+                    <p>The other experience I have is in <span>Graphic Design and Web Design.</span> In my teen years I designed and <span>sold</span> over <span>1000+</span> merchandise items on Redbubble of my own unique designs. This included <span>managing</span> my own store and optimizing the visibility through my own <span>marketing.</span> I have also designed Instagram highlight covers, made logos for a non-profit organization and sold my own digital and physical artwork</p>
+
+                    <p>Even though my passion lies in Web Development and UX, I still enjoy Graphic Design and Social Media work as well</p>
+                    <br>
+                    <br>
+                    <br>
+
+
+                                <!-- SLIDER SOURCE CODE https://codepen.io/jurbank/pen/AGNwxK -->
+                                <div class="slide-wrap">
+                                    <div class="slide-mask">
+                                      <ul class="slide-group">
+                                        <li class="slide"><img src="images/mrrobot.png" alt="mr robot shirt"></li>
+                                        <li class="slide"><img src="images/abide.png" alt="logos for abide"></li>      
+                                        <li class="slide"><img src="images/highlights.jpg" alt="instagram highlights"></li>
+                                        <li class="slide"><img src="images/YEJI.jpg" alt="digital art of yeji"></li>
+                                        <li class="slide"><img src="images/waffles.jpg" alt="digital art of waffles"></li>
+                                      </ul>
+                                    </div>
+                                    
+                                    <div class="slide-nav">
+                                      <ul>
+                                        <li class="bullet"></li>
+                                        <li class="bullet"></li>
+                                        <li class="bullet"></li>
+                                        <li class="bullet"></li> 
+                                        <li class="bullet"></li>       
+                                      </ul>
+                                    </div>
+                                  </div>            
+                </section>
+
+                <!-- Projects  -->
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><button id ="btn19"><a href="#projectOne">Single Site Showcase</a></button></li>
+                        <li><button id ="btn20"><a href="#projectTwo">API Integration</a></button></li>
+                        <li><button id ="btn21"><a href="#projectThree">Full Stack Site</a></button></li>
+                    </ul>
+                    <section id="projectOne" class="currentItem">
+                        <h3>Single Site</h3>
+                        <p> This is one of my first projects. It is a single site showcase featuring a guesing game and a working contact form. I chose to base my site off of my favorite musician group at the time, 'NCT Dream'. My main gripe with sites that already existed about them is that they were all lacking the color and fun that the group brings to the table. I wanted to create something that represented their youthful and vibrant energy from the ground up.</p> 
+                        <img src="images/nctdream1.png" alt="single site pic" class="image-left">
+
+                        <p>First look at the site. Includes a functional navigation bar.Includes light and dark mode.Hovering over the images on the 'Members' sections brings up descriptions of each person.</p>
+
+                        <p>Responsive album picker. Hover over an album and it gets larger. Clicking on it shows the album tracklist and pulls up the cover. Coded in Javascript. The guessing game is the game "Snake Eyes” that allows a random guess to try and match up with computer guesses. Contact form coded in Javascript.</p>
+                        <img src="images/nctdream2.png" alt="second half of single site" class="image-left">
+                        <br> <br> <br> <br> <br> <br> <br>
+                    </section>
+
+                    <section id="projectTwo"  class="hiddenItem">
+                        <h3>API Integration</h3>
+                        <p> This project was a challenge. Following my first site I wanted to create another site for a trilogy with one more after this. I based this one of of the group 'Aepsa'. The scope included integrating an outside API or JSON file. Additionally I had to have a carousel of images in the site. The main issue was deciding what API to use. I used my previous site as a base and coded the framework in HTML then went in and stylized it. Then I integrated the JSON file and the API. </p> 
+                        <img src="images/aespa.png" alt="api site pic 1" class="image-left">
+
+                        <p>The first look at the site. Navigation bar and introduction. Member introductions. Not part of the requirements but I added it for context. The JSON File integration. Loaded from an outside file. The file had all the information of the Album details. None of it was in the HTML. API integration for the carousel.</p>
+                        <img src="images/aespa2.png" alt="api site pic 2" class="image-left">
+                    </section>
+
+                    <section id="projectThree" class="hiddenItem">
+                        <h3>Full Stack Site</h3>
+                        <img src="images/rv1.png" alt="full stack website part 1" class="image-left">
+                        <p> The last site of my musician trilogy. I put all my skills learned from the past two projects into this one. There were no limitations or scopes, only that it had to solve a problem. </p>
+                        
+                        <p>The problem I chose to tackle with this site is that the music group I made my site on was an older group that has so much content from all over the internet since they have years of activity. I aimed to compile all that information in a single place so that newer fans can get information and content in a centralized place.</p>
+                        
+                        <p>I followed my same process from the previous project, HTML first, then CSS, then some Javascript. I liked certain aspects from both sites but wanted to make this one even better. One of the main qualms I had with the first site is that while it showed the albums it didn't play music. I integrated the Spotify API to play songs when you click on an album.
+                        </p> 
+                        <img src="images/rv2.png" alt="full stack site pic 2" class="image-left">
+
+                        <p>The home page which has a functional navigation bar. A responsive member section that when hovered over includes description and overlay images A responsive Spotify API integration that plays the album title track when you click on it. When not signed into Spotify it plays a 13 second preview.</p>
+                            
+                        <p>Scroll below for a responsive sample version of the music picker.</p>
+                    </section>
+
+                </section>
+                <section id="switcher1">
+                    <br>
+                    <section id="product1" class="currentItem">
+                        <h3>Chill Kill</h3>
+                        <img src="images/albumCovers/chillkill.webp" alt="chill kill album cover">
+                        <ul>
+                            <li>Chill Kill</li>
+                            <li>Knock Knock (Who's There?)</li>
+                            <li>Underwater</li>
+                            <li>Will I Ever See You Again</li>
+                            <li>Nightmare</li>
+                            <li>Iced Coffee</li>
+                            <li>One Kiss</li>
+                            <li>Bulldozer</li>
+                            <li>Wings</li>
+                            <li>Scenery</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product2" class="hiddenItem">
+                        <h3>The Reve festival 2022 - Birthday</h3>
+                        <img src="images/albumCovers/birthday.jpg" alt="birthday album cover">
+                        <ul>
+                            <li>Birthday</li>
+                            <li>Bye Bye</li>
+                            <li>On A Ride</li>
+                            <li>Zoom</li>
+                            <li>Moon</li>
+                            <li>Celebrate</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product3" class="hiddenItem">
+                        <h3>Bloom</h3>
+                        <img src="images/albumCovers/bloom.jpg" alt="bloom album cover">
+                        <ul>
+                            <li>Marionette</li>
+                            <li>Wildside</li>
+                            <li>SAPPY</li>
+                            <li>Jackpot</li>
+                            <li>Cookie Jar</li>
+                            <li>Snap Snap</li>
+                            <li>Sayonara</li>
+                            <li>Aitai-tai</li>
+                            <li>Swimming Pool</li>
+                            <li>Cause It's You</li>
+                            <li>Color of Love</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product4" class="hiddenItem">
+                        <h3>The ReVe Festival Finale 2022 - Feel My Rhythm</h3>
+                        <img src="images/albumCovers/fmr.png" alt ="fmr album cover">
+                        <ul>
+                            <li>Feel My Rhythm</li>
+                            <li>Rainbow Halo</li>
+                            <li>Beg for me</li>
+                            <li>Bamboleo</li>
+                            <li>Good, Bad, Ugly</li>
+                            <li>In My Dreams</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product5" class="hiddenItem">
+                        <h3>Queendom</h3>
+                        <img src="images/albumCovers/queendom.png" alt ="queendom album cover">
+                        <ul>
+                            <li>Queendom</li>
+                            <li>POSE</li>
+                            <li>Knock on Wood</li>
+                            <li>Better Be</li>
+                            <li>Pushin' N Pullin'</li>
+                            <li>Hello, Sunset</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product6" class="hiddenItem">
+                        <h3>The ReVe Festival Finale</h3>
+                        <img src="images/albumCovers/rvff.jpg" alt ="reve festival finale album cover">
+                        <ul>
+                            <li>Psycho</li>
+                            <li>In & Out</li>
+                            <li>Remember Forever</li>
+                            <li>Eyes Locked, Hands Locked</li>
+                            <li>Ladies Night</li>
+                            <li>Jumpin</li>
+                            <li>Love Is The Way</li>
+                            <li>Carpool</li>
+                            <li>Umpah Umpah</li>
+                            <li>LP</li>
+                            <li>Parade</li>
+                            <li>Bing Bing</li>
+                            <li>Milkshake</li>
+                            <li>Sunny Side Up!</li>
+                            <li>Zimzalabim</li>
+                            <li>La Rouge</li>
+
+                        </ul> 
+                    </section>
+
+                    <section id="product7" class="hiddenItem">
+                        <h3>The ReVe Festival Day 2</h3>
+                        <img src="images/albumCovers/rvfd2.jpg" alt ="reve festival day 2 album cover">
+                        <ul>
+                            <li>Umpah Umpah</li>
+                            <li>Carpool</li>
+                            <li>Love Is The Way</li>
+                            <li>Jumpin</li>
+                            <li>Ladies Night</li>
+                            <li>Eyes Locked, Hands Locked</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product8" class="hiddenItem">
+                        <h3>The ReVe Festival Day 1</h3>
+                        <img src="images/albumCovers/rvfd1.jpg" alt ="reve festival day 1 album cover">
+                        <ul>
+                            <li>Zimzalabim</li>
+                            <li>LP</li>
+                            <li>Parade</li>
+                            <li>Bing Bing</li>
+                            <li>Milkshake</li>
+                            <li>Sunny Side Up!</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product9" class="hiddenItem">
+                        <h3>Really Bad Boy</h3>
+                        <img src="images/albumCovers/rbb.jpg" alt = "really bad boy album cover">
+                        <ul>
+                            <li>Really Bad Boy</li>
+                            <li>Butterflies</li>
+                            <li>So Good</li>
+                            <li>Sassy Me</li>
+                            <li>Taste</li>
+                            <li>RBB (English Ver.)</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product10" class="hiddenItem">
+                        <h3>Summer Magic</h3>
+                        <img src="images/albumCovers/summermagic.jpg" alt = "summer magic album cover">
+                        <ul>
+                            <li>Power Up</li>
+                            <li>With You</li>
+                            <li>Mr. E</li>
+                            <li>Mosquito</li>
+                            <li>Hit That Drum</li>
+                            <li>Blue Lemonade</li>
+                            <li>Bad Boy (English Ver.)</li>
+                        </ul> 
+                    </section>
+
+                    <section id="product11" class="hiddenItem">
+                        <h3>The Perfect Red Velvet</h3>
+                        <img src="images/albumCovers/perfectrv.jpg" alt = "perfect red velvet album cover">
+                        <ul>
+                            <li>Bad Boy</li>
+                            <li>All Right</li>
+                            <li>Peek-A-Boo</li>
+                            <li>Look</li>
+                            <li>I Just</li>
+                            <li>Kingdom Come</li>
+                            <li>Time To Love</li>
+                            <li>My Second Date</li>
+                            <li>Attaboy</li>
+                            <li>Perfect 10</li>
+                            <li>About Love</li>
+                            <li>Moonlight Melody</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product12" class="hiddenItem">
+                        <h3>Perfect Velvet</h3>
+                        <img src="images/albumCovers/perfectvelvet.jpg" alt = "perfect velvet album cover">
+                        <ul>
+                            <li>Peek-A-Boo</li>
+                            <li>Look</li>
+                            <li>I Just</li>
+                            <li>Kingdom Come</li>
+                            <li>Time To Love</li>
+                            <li>My Second Date</li>
+                            <li>Attaboy</li>
+                            <li>Perfect 10</li>
+                            <li>About Love</li>
+                            <li>Moonlight Melody</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product13" class="hiddenItem">
+                        <h3>The Red Summer</h3>
+                        <img src="images/albumCovers/redsummer.jpg" alt = "red summer album cover">
+                        <ul>
+                            <li>Red Flavor</li>
+                            <li>You Better Know</li>
+                            <li>Zoo</li>
+                            <li>Mojito</li>
+                            <li>Hear The Sea</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product14" class="hiddenItem">
+                        <h3>Rookie</h3>
+                        <img src="images/albumCovers/rookie.jpg" alt = "rookie album cover">
+                        <ul>
+                            <li>Rookie</li>
+                            <li>Little Little</li>
+                            <li>Happily Ever After</li>
+                            <li>Talk To Me</li>
+                            <li>Body Talk</li>
+                            <li>Last Love</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product15" class="hiddenItem">
+                        <h3>Russian Roulette</h3>
+                        <img src="images/albumCovers/russianroulette.jpg" alt = "russian roulette album cover">
+                        <ul>
+                            <li>Russian Roulette</li>
+                            <li>Lucky Girl</li>
+                            <li>Bad Dracula</li>
+                            <li>Sunny Afternoon</li>
+                            <li>Fool</li>
+                            <li>Some Love</li>
+                            <li>My Dear</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product16" class="hiddenItem">
+                        <h3>The Velvet</h3>
+                        <img src="images/albumCovers/thevelvet.jpg" alt = "the velvet album cover">
+                        <ul>
+                            <li>One Of These Nights</li>
+                            <li>Cool Hot Sweet Love</li>
+                            <li>Light Me Up</li>
+                            <li>First Time</li>
+                            <li>Rose Scent Breeze</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product17" class="hiddenItem">
+                        <h3>The Red</h3>
+                        <img src="images/albumCovers/thered.jpg" alt = "the red album cover">
+                        <ul>
+                            <li>Dumb Dumb</li>
+                            <li>Huff n Puff</li>
+                            <li>Campfire</li>
+                            <li>Red Dress</li>
+                            <li>Oh Boy</li>
+                            <li>Lady's Room</li>
+                            <li>Time Slip</li>
+                            <li>Don't U Wait No More</li>
+                            <li>Day 1</li>
+                            <li>Cool World</li>
+                        </ul> 
+                    </section>
+
+
+                    <section id="product18" class="hiddenItem">
+                        <h3>Ice Cream Cake</h3>
+                        <img src="images/albumCovers/icc.jpg" alt = "ice cream cake album cover">
+                        <ul>
+                            <li>Ice Cream Cake</li>
+                            <li>Automatic</li>
+                            <li>Somethin Kinda Crazy</li>
+                            <li>Stupid Cupid</li>
+                            <li>Take It Slow/li>
+                            <li>Candy</li>
+                        </ul> 
+                    </section>
+
+
+                    <!-- ALBUM BUTTONS -->
+                    <div id="switcherButtons">
+                        <button id="btn1" class="episode" data-spotify-id="spotify:track:68gQG2HpRMxIRom4pCugMq"><img src="images/albumCovers/chillkill.webp" alt="chill kill album cover"></button>
+                        <button id="btn2" class="episode" data-spotify-id="spotify:track:4LJgBT9yo0beHlaBesCFEv"><img src="images/albumCovers/birthday.jpg" alt="birthday album cover"></button>
+                        <button id="btn3" class="episode" data-spotify-id="spotify:track:4RmEqYXrb89Mlwzm2p6Wyd"><img src="images/albumCovers/bloom.jpg" alt="bloom album cover"></button>
+                        <button id="btn4" class="episode" data-spotify-id="spotify:track:2oBMZYteeO8DyXV9gDx6Za"><img src="images/albumCovers/fmr.png" alt ="fmr album cover"></button>
+                        <button id="btn5" class="episode" data-spotify-id="spotify:track:6SpPr7K4YQ2wp8jU6uOTmQ"><img src="images/albumCovers/queendom.png" alt ="queendom album cover"></button>
+                        <button id="btn6" class="episode" data-spotify-id="spotify:track:3CYH422oy1cZNoo0GTG1TK"><img src="images/albumCovers/rvff.jpg" alt ="reve festival finale album cover"></button>
+                        <button id="btn7" class="episode" data-spotify-id="spotify:track:5qSoW3ewNlhRN3FNZPmVns"><img src="images/albumCovers/rvfd2.jpg" alt ="reve festival day 2 album cover"></button>
+                        <button id="btn8" class="episode" data-spotify-id="spotify:track:0GUbhhI5fRx7BlqlqlhjuB"><img src="images/albumCovers/rvfd1.jpg" alt ="reve festival day 1 album cover"></button>
+                        <button id="btn9" class="episode" data-spotify-id="spotify:track:4xjVP2Vogo0C72o6Nevq0W"><img src="images/albumCovers/rbb.jpg" alt = "really bad boy album cover"></button>
+                        <button id="btn10" class="episode" data-spotify-id="spotify:track:381g0b6QZxC13SzA2HRMIc"><img src="images/albumCovers/summermagic.jpg" alt = "summer magic album cover"></button>
+                        <button id="btn11" class="episode" data-spotify-id="spotify:track:5GKwq4sO5ZHKuWaDmdwMQc"><img src="images/albumCovers/perfectrv.jpg" alt = "perfect red velvet album cover"></button>
+                        <button id="btn12" class="episode" data-spotify-id="spotify:track:42tFTth2jcF7iSo0RBjfJF"><img src="images/albumCovers/perfectvelvet.jpg" alt = "perfect velvet album cover"></button>
+                        <button id="btn13" class="episode" data-spotify-id="spotify:track:7nKQ5WAcjnG48knyLuo8gO"><img src="images/albumCovers/redsummer.jpg" alt = "red summer album cover"></button>
+                        <button id="btn14" class="episode" data-spotify-id="spotify:track:69xdFGM7SJkbDf77s0gJEl"><img src="images/albumCovers/rookie.jpg" alt = "rookie album cover"></button>
+                        <button id="btn15" class="episode" data-spotify-id="spotify:track:5HiSc2ZCGn8L3cH3qSwzBT"><img src="images/albumCovers/russianroulette.jpg" alt = "russian roulette album cover"></button>
+                        <button id="btn16" class="episode" data-spotify-id="spotify:track:6koMMQlsRWBwHZXdtWxgUk"><img src="images/albumCovers/thevelvet.jpg" alt = "the velvet album cover"></button>
+                        <button id="btn17" class="episode" data-spotify-id="spotify:track:64iDjAuWDogVhuoWhKklF9"><img src="images/albumCovers/thered.jpg" alt = "the red album cover"></button>
+                        <button id="btn18" class="episode" data-spotify-id="spotify:track:5vCuawHQ8Poch1odz9JDpB"><img src="images/albumCovers/icc.jpg" alt = "ice cream cake album cover"></button>
+                    </div>
+                </section>
+
+                <!-- SPOTIFY API Source:https://developer.spotify.com/documentation/embeds/tutorials/using-the-iframe-api  -->
+                <section>
+                    <div id="embed-iframe"></div>
+                    <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+                    </script>
+                    <script type="text/javascript">
+                    window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                        const element = document.getElementById('embed-iframe');
+                        const options = {
+                        width: '100%',
+                        height: '160',
+                        uri: 'spotify:track:68gQG2HpRMxIRom4pCugMq'
+                        };
+                        const callback = (EmbedController) => {
+                        document.querySelectorAll('.episode').forEach(
+                            episode => {
+                            episode.addEventListener('click', () => {
+                                EmbedController.loadUri(episode.dataset.spotifyId)
+                            });
+                            })
+                        };
+                        IFrameAPI.createController(element, options, callback);
+                    };
+                    </script>
+                </section>
+
+
+                <!-- CONTACT FORM -->
+                <section id="contact">
+                    <h3>Contact Form</h3>
+                    <p>Please use this form for inquires</p>
+                     
+                    <!-- form begins  -->
+                    <form id="valOnSubmit">
+                         <!--name-->
+                        <label for="fullName">Full Name<span class="required">*</span></label>
+                        <span class="message">Please&nbsp;enter&nbsp;your&nbsp;full&nbsp;name</span>
+                        <input name="fullName" id="fullName" type="text" autocomplete="name">
+
+                        <!--phone number-->
+                        <label for="phoneNumber">Phone Number<span class="required">*</span></label>
+                        <span class="message">Please&nbsp;enter&nbsp;a&nbsp;10&nbsp;digit&nbsp;phone&nbsp;number</span>
+                        <input name="phoneNumber" id="phoneNumber" type="text" autocomplete="tel-national">
+
+                         <!--email-->
+                        <label for="asuEmail">Enter your Email Address:<span class="required">*</span></label>
+			            <span class="message">Please enter your email address only</span>
+			            <input type="email" name="myEmail" id="asuEmail" autocomplete="email">
+                        
+                        <!--message-->
+                        <label for="message">Message<span class="required">*</span></label>
+                        <span class="message">Please&nbsp;enter&nbsp;your&nbsp;message</span>
+                        <textarea id="message"></textArea>
+
+                    
+
+                        <!--submit button-->
+                        <input type="submit" name="mySubmit" id="mySubmit">
+                    </form> <!-- form ends  -->
+                </section>
+
+                <!-- form success section  -->
+                <div id="success" class="hide">
+                    <p>You have successfully submitted the form. Here is the information you sent us:</p>
+                    <p id="formSub"></p>
+                </div>
+            </main>
+
+        </div>
+    </body>
